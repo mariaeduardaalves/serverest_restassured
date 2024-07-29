@@ -1,0 +1,875 @@
+}14:12:33.096 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.102 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.108 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.108 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+i14:12:33.108 [Test worker] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+g14:12:33.108 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.108 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+q14:12:33.108 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: POST /usuarios HTTP/1.1
+^14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "POST /usuarios HTTP/1.1[\r][\n]"
+R14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+e14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+Z14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 133[\r][\n]"
+[14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+V14:12:33.109 [Test worker] DEBUG org.apache.http.headers - >> POST /usuarios HTTP/1.1
+J14:12:33.109 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+]14:12:33.109 [Test worker] DEBUG org.apache.http.headers - >> Content-Type: application/json
+R14:12:33.109 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 133
+S14:12:33.109 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.109 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.109 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.109 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+D14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "{[\n]"
+]14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "  "nome": "Wilma Bartell",[\n]"
+x14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "  "email": "wilmabartell@restassuredeta20232.com.br",[\n]"
+Y14:12:33.109 [Test worker] DEBUG org.apache.http.wire -  >> "  "password": "teste",[\n]"
+\14:12:33.110 [Test worker] DEBUG org.apache.http.wire -  >> "  "administrador": "true"[\n]"
+@14:12:33.110 [Test worker] DEBUG org.apache.http.wire -  >> "}"
+[14:12:33.128 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 201 Created[\r][\n]"
+e14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Y14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 82[\r][\n]"
+j14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.129 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+q14:12:33.130 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+S14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 201 Created
+]14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+Q14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 82
+b14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.130 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.132 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.134 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.134 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.172 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+s14:12:33.172 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "Cadastro realizado com sucesso",[\n]"
+`14:12:33.172 [Test worker] DEBUG org.apache.http.wire -  << "    "_id": "WoHdrVM4QZ2uBQeQ"[\n]"
+@14:12:33.172 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.172 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@18faaff6
+}14:12:33.172 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.401 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.401 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.402 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.402 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+i14:12:33.402 [Test worker] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+g14:12:33.402 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.402 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+14:12:33.402 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1
+n14:12:33.402 [Test worker] DEBUG org.apache.http.wire -  >> "GET /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1[\r][\n]"
+R14:12:33.402 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+[14:12:33.402 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.402 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.402 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.402 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.402 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+f14:12:33.402 [Test worker] DEBUG org.apache.http.headers - >> GET /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1
+J14:12:33.402 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+S14:12:33.402 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.402 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.402 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.403 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+V14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+e14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Z14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 172[\r][\n]"
+j14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.405 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+l14:12:33.405 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+N14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+]14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+R14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 172
+b14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.405 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.406 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.406 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.406 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.407 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+_14:12:33.407 [Test worker] DEBUG org.apache.http.wire -  << "    "nome": "Wilma Bartell",[\n]"
+z14:12:33.407 [Test worker] DEBUG org.apache.http.wire -  << "    "email": "wilmabartell@restassuredeta20232.com.br",[\n]"
+[14:12:33.407 [Test worker] DEBUG org.apache.http.wire -  << "    "password": "teste",[\n]"
+_14:12:33.407 [Test worker] DEBUG org.apache.http.wire -  << "    "administrador": "true",[\n]"
+`14:12:33.407 [Test worker] DEBUG org.apache.http.wire -  << "    "_id": "WoHdrVM4QZ2uBQeQ"[\n]"
+@14:12:33.407 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.407 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5e360c3b
+}14:12:33.407 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.420 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.420 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.421 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.421 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+i14:12:33.421 [Test worker] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+g14:12:33.421 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.421 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+n14:12:33.421 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: POST /login HTTP/1.1
+[14:12:33.421 [Test worker] DEBUG org.apache.http.wire -  >> "POST /login HTTP/1.1[\r][\n]"
+R14:12:33.421 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+e14:12:33.421 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+Y14:12:33.421 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 79[\r][\n]"
+[14:12:33.421 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.421 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.421 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.421 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.421 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+S14:12:33.421 [Test worker] DEBUG org.apache.http.headers - >> POST /login HTTP/1.1
+J14:12:33.421 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+]14:12:33.421 [Test worker] DEBUG org.apache.http.headers - >> Content-Type: application/json
+Q14:12:33.421 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 79
+S14:12:33.421 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.421 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.422 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.422 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+D14:12:33.422 [Test worker] DEBUG org.apache.http.wire -  >> "{[\n]"
+x14:12:33.422 [Test worker] DEBUG org.apache.http.wire -  >> "  "email": "wilmabartell@restassuredeta20232.com.br",[\n]"
+X14:12:33.422 [Test worker] DEBUG org.apache.http.wire -  >> "  "password": "teste"[\n]"
+@14:12:33.422 [Test worker] DEBUG org.apache.http.wire -  >> "}"
+V14:12:33.427 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+e14:12:33.427 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.427 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Z14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 300[\r][\n]"
+j14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.428 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+l14:12:33.428 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+N14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+]14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+R14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 300
+b14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.428 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.428 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.428 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.428 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.429 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+p14:12:33.429 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "Login realizado com sucesso",[\n]"
+½14:12:33.429 [Test worker] DEBUG org.apache.http.wire -  << "    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU"[\n]"
+@14:12:33.429 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.429 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3395c2a7
+}14:12:33.429 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.444 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.444 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.444 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.444 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+g14:12:33.444 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.445 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+q14:12:33.445 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: POST /produtos HTTP/1.1
+^14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "POST /produtos HTTP/1.1[\r][\n]"
+¹14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU[\r][\n]"
+R14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+e14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+Z14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 101[\r][\n]"
+[14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+V14:12:33.445 [Test worker] DEBUG org.apache.http.headers - >> POST /produtos HTTP/1.1
+±14:12:33.445 [Test worker] DEBUG org.apache.http.headers - >> authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU
+J14:12:33.445 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+]14:12:33.445 [Test worker] DEBUG org.apache.http.headers - >> Content-Type: application/json
+R14:12:33.445 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 101
+S14:12:33.445 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.445 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.445 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.445 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+D14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "{[\n]"
+b14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "  "nome": "Moab Is My Washpot",[\n]"
+R14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "  "preco": 100,[\n]"
+`14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "  "descricao": "Karie Klein",[\n]"
+V14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "  "quantidade": 100[\n]"
+@14:12:33.445 [Test worker] DEBUG org.apache.http.wire -  >> "}"
+[14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 201 Created[\r][\n]"
+e14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Y14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 82[\r][\n]"
+j14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.449 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+q14:12:33.449 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+S14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 201 Created
+]14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+Q14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 82
+b14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.449 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.449 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.450 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.450 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.450 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+s14:12:33.450 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "Cadastro realizado com sucesso",[\n]"
+`14:12:33.450 [Test worker] DEBUG org.apache.http.wire -  << "    "_id": "FN4Kqo8J8PZ7LIEE"[\n]"
+@14:12:33.451 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.451 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3278d065
+}14:12:33.451 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.462 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.462 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.463 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.463 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+i14:12:33.463 [Test worker] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+g14:12:33.463 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.463 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+14:12:33.463 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /produtos/FN4Kqo8J8PZ7LIEE HTTP/1.1
+n14:12:33.463 [Test worker] DEBUG org.apache.http.wire -  >> "GET /produtos/FN4Kqo8J8PZ7LIEE HTTP/1.1[\r][\n]"
+R14:12:33.463 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+[14:12:33.463 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.463 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.463 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.463 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.463 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+f14:12:33.463 [Test worker] DEBUG org.apache.http.headers - >> GET /produtos/FN4Kqo8J8PZ7LIEE HTTP/1.1
+J14:12:33.463 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+S14:12:33.463 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.463 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.463 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.463 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+V14:12:33.464 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+e14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Z14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 140[\r][\n]"
+j14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.465 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+l14:12:33.465 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+N14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+]14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+R14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 140
+b14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.465 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.465 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.465 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.465 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.466 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+d14:12:33.466 [Test worker] DEBUG org.apache.http.wire -  << "    "nome": "Moab Is My Washpot",[\n]"
+T14:12:33.466 [Test worker] DEBUG org.apache.http.wire -  << "    "preco": 100,[\n]"
+b14:12:33.466 [Test worker] DEBUG org.apache.http.wire -  << "    "descricao": "Karie Klein",[\n]"
+Y14:12:33.466 [Test worker] DEBUG org.apache.http.wire -  << "    "quantidade": 100,[\n]"
+`14:12:33.466 [Test worker] DEBUG org.apache.http.wire -  << "    "_id": "FN4Kqo8J8PZ7LIEE"[\n]"
+@14:12:33.466 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.466 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2a510e0e
+}14:12:33.466 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.484 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.484 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.484 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.484 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+g14:12:33.484 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.485 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+r14:12:33.485 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: POST /carrinhos HTTP/1.1
+_14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "POST /carrinhos HTTP/1.1[\r][\n]"
+¹14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU[\r][\n]"
+R14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+e14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+Y14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 97[\r][\n]"
+[14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+W14:12:33.485 [Test worker] DEBUG org.apache.http.headers - >> POST /carrinhos HTTP/1.1
+±14:12:33.485 [Test worker] DEBUG org.apache.http.headers - >> authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU
+J14:12:33.485 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+]14:12:33.485 [Test worker] DEBUG org.apache.http.headers - >> Content-Type: application/json
+Q14:12:33.485 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 97
+S14:12:33.485 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.485 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.485 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.485 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+D14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "{[\n]"
+R14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "  "produtos": [[\n]"
+H14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "    {[\n]"
+i14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "      "idProduto": "FN4Kqo8J8PZ7LIEE",[\n]"
+Y14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "      "quantidade": 10[\n]"
+H14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "    }[\n]"
+F14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "  ][\n]"
+@14:12:33.485 [Test worker] DEBUG org.apache.http.wire -  >> "}"
+[14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 201 Created[\r][\n]"
+e14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Y14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 82[\r][\n]"
+j14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.490 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+q14:12:33.490 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+S14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 201 Created
+]14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+Q14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 82
+b14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.490 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.490 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.490 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.490 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.491 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+s14:12:33.491 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "Cadastro realizado com sucesso",[\n]"
+`14:12:33.491 [Test worker] DEBUG org.apache.http.wire -  << "    "_id": "rKkuGSqHPGMpxJBG"[\n]"
+@14:12:33.491 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.491 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@614cbec4
+}14:12:33.491 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.502 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.502 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.502 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.502 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+i14:12:33.502 [Test worker] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+g14:12:33.502 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.502 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+‚14:12:33.502 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /carrinhos/rKkuGSqHPGMpxJBG HTTP/1.1
+o14:12:33.502 [Test worker] DEBUG org.apache.http.wire -  >> "GET /carrinhos/rKkuGSqHPGMpxJBG HTTP/1.1[\r][\n]"
+R14:12:33.502 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+[14:12:33.502 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.503 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.503 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.503 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.503 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+g14:12:33.503 [Test worker] DEBUG org.apache.http.headers - >> GET /carrinhos/rKkuGSqHPGMpxJBG HTTP/1.1
+J14:12:33.503 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+S14:12:33.503 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.503 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.503 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.503 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+V14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+e14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Z14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 274[\r][\n]"
+j14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.504 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+l14:12:33.505 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+N14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+]14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+R14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 274
+b14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.505 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.505 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.505 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.505 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+T14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "    "produtos": [[\n]"
+L14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "        {[\n]"
+o14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "            "idProduto": "FN4Kqo8J8PZ7LIEE",[\n]"
+`14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "            "quantidade": 10,[\n]"
+c14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "            "precoUnitario": 100[\n]"
+L14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "        }[\n]"
+I14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "    ],[\n]"
+Z14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "    "precoTotal": 1000,[\n]"
+]14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "    "quantidadeTotal": 10,[\n]"
+g14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "    "idUsuario": "WoHdrVM4QZ2uBQeQ",[\n]"
+`14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "    "_id": "rKkuGSqHPGMpxJBG"[\n]"
+@14:12:33.506 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.506 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1c8e2850
+}14:12:33.506 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.544 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.544 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.545 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.545 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+i14:12:33.545 [Test worker] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+g14:12:33.545 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.545 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+„14:12:33.545 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: DELETE /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1
+q14:12:33.545 [Test worker] DEBUG org.apache.http.wire -  >> "DELETE /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1[\r][\n]"
+R14:12:33.545 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+[14:12:33.545 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.545 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.545 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.545 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.545 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+i14:12:33.545 [Test worker] DEBUG org.apache.http.headers - >> DELETE /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1
+J14:12:33.545 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+S14:12:33.545 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.545 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.545 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.545 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+_14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+e14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Z14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 117[\r][\n]"
+j14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.547 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+u14:12:33.547 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 400 Bad Request
+W14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 400 Bad Request
+]14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+R14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 117
+b14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.547 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.547 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.547 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.547 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.548 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+­14:12:33.548 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "N[0xc3][0xa3]o [0xc3][0xa9] permitido excluir usu[0xc3][0xa1]rio com carrinho cadastrado",[\n]"
+g14:12:33.548 [Test worker] DEBUG org.apache.http.wire -  << "    "idCarrinho": "rKkuGSqHPGMpxJBG"[\n]"
+@14:12:33.548 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.548 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@70ed902a
+}14:12:33.549 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.554 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.554 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.555 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.555 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+g14:12:33.555 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.555 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+„14:12:33.555 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: DELETE /carrinhos/concluir-compra HTTP/1.1
+q14:12:33.555 [Test worker] DEBUG org.apache.http.wire -  >> "DELETE /carrinhos/concluir-compra HTTP/1.1[\r][\n]"
+¹14:12:33.555 [Test worker] DEBUG org.apache.http.wire -  >> "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU[\r][\n]"
+R14:12:33.555 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+[14:12:33.555 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.555 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.555 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.555 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.555 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+i14:12:33.555 [Test worker] DEBUG org.apache.http.headers - >> DELETE /carrinhos/concluir-compra HTTP/1.1
+±14:12:33.555 [Test worker] DEBUG org.apache.http.headers - >> authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU
+J14:12:33.555 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+S14:12:33.555 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.555 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.555 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.555 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+V14:12:33.557 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+e14:12:33.557 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.557 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.557 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.557 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.557 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.557 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.558 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.558 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Y14:12:33.558 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 51[\r][\n]"
+j14:12:33.558 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.558 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.558 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.558 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+l14:12:33.558 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+N14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+]14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+Q14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 51
+b14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.558 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.558 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.558 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.558 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.559 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+|14:12:33.559 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "Registro exclu[0xc3][0xad]do com sucesso"[\n]"
+@14:12:33.559 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.559 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@19e8fe55
+}14:12:33.559 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.567 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.567 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.568 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.568 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+i14:12:33.568 [Test worker] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+g14:12:33.568 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.568 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+‚14:12:33.568 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /carrinhos/rKkuGSqHPGMpxJBG HTTP/1.1
+o14:12:33.568 [Test worker] DEBUG org.apache.http.wire -  >> "GET /carrinhos/rKkuGSqHPGMpxJBG HTTP/1.1[\r][\n]"
+R14:12:33.568 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+[14:12:33.568 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.568 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+w14:12:33.568 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:52787<->127.0.0.1:3000 closed
+w14:12:33.568 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:52786<->127.0.0.1:3000 closed
+w14:12:33.568 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:52789<->127.0.0.1:3000 closed
+w14:12:33.568 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:52788<->127.0.0.1:3000 closed
+w14:12:33.568 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:52791<->127.0.0.1:3000 closed
+w14:12:33.568 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:52790<->127.0.0.1:3000 closed
+w14:12:33.568 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:52793<->127.0.0.1:3000 closed
+w14:12:33.568 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:52792<->127.0.0.1:3000 closed
+y14:12:33.568 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.568 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.568 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+g14:12:33.568 [Test worker] DEBUG org.apache.http.headers - >> GET /carrinhos/rKkuGSqHPGMpxJBG HTTP/1.1
+J14:12:33.568 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+S14:12:33.568 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.568 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.568 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.568 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+_14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+e14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Y14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 45[\r][\n]"
+j14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.571 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+u14:12:33.571 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 400 Bad Request
+W14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 400 Bad Request
+]14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+Q14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 45
+b14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.571 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.572 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.572 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.572 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.573 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+v14:12:33.573 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "Carrinho n[0xc3][0xa3]o encontrado"[\n]"
+@14:12:33.573 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.573 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4a29fe2e
+}14:12:33.573 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+w14:12:33.582 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:52785<->127.0.0.1:3000 closed
+}14:12:33.584 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.584 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.585 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.585 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+g14:12:33.585 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.585 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+„14:12:33.585 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: DELETE /produtos/FN4Kqo8J8PZ7LIEE HTTP/1.1
+q14:12:33.585 [Test worker] DEBUG org.apache.http.wire -  >> "DELETE /produtos/FN4Kqo8J8PZ7LIEE HTTP/1.1[\r][\n]"
+¹14:12:33.585 [Test worker] DEBUG org.apache.http.wire -  >> "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU[\r][\n]"
+R14:12:33.585 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+[14:12:33.585 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.585 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.585 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.585 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.585 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+i14:12:33.585 [Test worker] DEBUG org.apache.http.headers - >> DELETE /produtos/FN4Kqo8J8PZ7LIEE HTTP/1.1
+±14:12:33.585 [Test worker] DEBUG org.apache.http.headers - >> authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU
+J14:12:33.585 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+S14:12:33.585 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.585 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.585 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.585 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+V14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+e14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Y14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 51[\r][\n]"
+j14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.588 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+l14:12:33.588 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+N14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+]14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+Q14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 51
+b14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.588 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.588 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.588 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.588 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.589 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+|14:12:33.589 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "Registro exclu[0xc3][0xad]do com sucesso"[\n]"
+@14:12:33.589 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.589 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1c459c28
+}14:12:33.589 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.596 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.596 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.596 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.596 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+i14:12:33.597 [Test worker] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+g14:12:33.597 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.597 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+14:12:33.597 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /produtos/FN4Kqo8J8PZ7LIEE HTTP/1.1
+n14:12:33.597 [Test worker] DEBUG org.apache.http.wire -  >> "GET /produtos/FN4Kqo8J8PZ7LIEE HTTP/1.1[\r][\n]"
+R14:12:33.597 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+[14:12:33.597 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.597 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.597 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.597 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.597 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+f14:12:33.597 [Test worker] DEBUG org.apache.http.headers - >> GET /produtos/FN4Kqo8J8PZ7LIEE HTTP/1.1
+J14:12:33.597 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+S14:12:33.597 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.597 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.597 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.597 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+_14:12:33.598 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+e14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Y14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 44[\r][\n]"
+j14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.599 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+u14:12:33.599 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 400 Bad Request
+W14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 400 Bad Request
+]14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+Q14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 44
+b14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.599 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.599 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.599 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.599 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.600 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+u14:12:33.600 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "Produto n[0xc3][0xa3]o encontrado"[\n]"
+@14:12:33.600 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.600 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@771cbd13
+}14:12:33.600 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.606 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.606 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.606 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.606 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+g14:12:33.606 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.606 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+„14:12:33.607 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: DELETE /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1
+q14:12:33.607 [Test worker] DEBUG org.apache.http.wire -  >> "DELETE /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1[\r][\n]"
+¹14:12:33.607 [Test worker] DEBUG org.apache.http.wire -  >> "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU[\r][\n]"
+R14:12:33.607 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+[14:12:33.607 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.607 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.607 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.607 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.607 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+i14:12:33.607 [Test worker] DEBUG org.apache.http.headers - >> DELETE /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1
+±14:12:33.607 [Test worker] DEBUG org.apache.http.headers - >> authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndpbG1hYmFydGVsbEByZXN0YXNzdXJlZGV0YTIwMjMyLmNvbS5iciIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3MjIyNzMxNTMsImV4cCI6MTcyMjI3Mzc1M30.CERf8jDUp99UZR7cEA6CnidfrA_5GpheDoMzIieFPFU
+J14:12:33.607 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+S14:12:33.607 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.607 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.607 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.607 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+V14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+e14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Y14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 51[\r][\n]"
+j14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.609 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+l14:12:33.609 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+N14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+]14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+Q14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 51
+b14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.609 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.609 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.609 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.609 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.610 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+|14:12:33.610 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "Registro exclu[0xc3][0xad]do com sucesso"[\n]"
+@14:12:33.610 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.610 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4fe4503a
+}14:12:33.610 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+}14:12:33.616 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+j14:12:33.616 [Test worker] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:3000
+i14:12:33.617 [Test worker] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+g14:12:33.617 [Test worker] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+i14:12:33.617 [Test worker] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+g14:12:33.617 [Test worker] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+d14:12:33.617 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+14:12:33.617 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1
+n14:12:33.617 [Test worker] DEBUG org.apache.http.wire -  >> "GET /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1[\r][\n]"
+R14:12:33.617 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+[14:12:33.617 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+]14:12:33.617 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+y14:12:33.617 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)[\r][\n]"
+d14:12:33.617 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+G14:12:33.617 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+f14:12:33.618 [Test worker] DEBUG org.apache.http.headers - >> GET /usuarios/WoHdrVM4QZ2uBQeQ HTTP/1.1
+J14:12:33.618 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+S14:12:33.618 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:3000
+U14:12:33.618 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+q14:12:33.618 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.3)
+\14:12:33.618 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+_14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+e14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+b14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "x-dns-prefetch-control: off[\r][\n]"
+b14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+…14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "strict-transport-security: max-age=15552000; includeSubDomains[\r][\n]"
+a14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "x-download-options: noopen[\r][\n]"
+f14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "x-content-type-options: nosniff[\r][\n]"
+f14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+t14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+Y14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 45[\r][\n]"
+j14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "Date: Mon, 29 Jul 2024 17:12:33 GMT[\r][\n]"
+]14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+\14:12:33.619 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+G14:12:33.620 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+u14:12:33.620 [Test worker] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 400 Bad Request
+W14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 400 Bad Request
+]14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+Z14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << x-dns-prefetch-control: off
+Z14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << x-frame-options: SAMEORIGIN
+}14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << strict-transport-security: max-age=15552000; includeSubDomains
+Y14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << x-download-options: noopen
+^14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << x-content-type-options: nosniff
+^14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << x-xss-protection: 1; mode=block
+l14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+Q14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 45
+b14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << Date: Mon, 29 Jul 2024 17:12:33 GMT
+U14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+T14:12:33.620 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5
+z14:12:33.620 [Test worker] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+|14:12:33.620 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+“14:12:33.620 [Test worker] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+D14:12:33.620 [Test worker] DEBUG org.apache.http.wire -  << "{[\n]"
+€14:12:33.620 [Test worker] DEBUG org.apache.http.wire -  << "    "message": "Usu[0xc3][0xa1]rio n[0xc3][0xa3]o encontrado"[\n]"
+@14:12:33.620 [Test worker] DEBUG org.apache.http.wire -  << "}"
+ž14:12:33.620 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4535bdc6
+}14:12:33.620 [Test worker] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
